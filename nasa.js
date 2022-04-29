@@ -7,11 +7,10 @@ document.querySelector('button').addEventListener('click', getDate);
       .then(data => {
     console.log(data)
     document.querySelector('img').src = data.hdurl;
-  document.querySelector('iframe').src = data.url;
-document.querySelector('h3').innerText = data.explanation;   
+  document.querySelector('h3').innerText = data.explanation;   
       })
       .catch(err => {
           console.log(`error ${err}`)
       }); 
        
-    }
+    } 
