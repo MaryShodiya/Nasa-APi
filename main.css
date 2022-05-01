@@ -15,7 +15,7 @@ body{
 
 .container{
 width:400px;
-height: 700px;
+height: 800px;
 margin:0 auto;
 border: 1px solid purple;
 box-shadow: 0 5px 5px 3px rgba(255,255,255,0.5);
@@ -24,7 +24,7 @@ border-radius: 33px;
 }
 
 
-img,iframe{
+img, embed{
     margin-left: 15px;
     margin-top: 13px;
     width: 370px;
@@ -35,7 +35,7 @@ img,iframe{
 }
 .content{
     width: 370px;
-    height: 300px;
+    height: 400px;
     margin-left: 15px;
     margin-top: 13px;
     border: 1px solid purple;
@@ -51,8 +51,6 @@ img,iframe{
 .firstcontainer{
  width:120px;   
  margin:0 auto;
- border:1px solid purple;
-box-shadow: 0 5px 5px 3px rgba(255,255,255,0.5);
 }
 
 #picturebutt{
