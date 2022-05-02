@@ -2,14 +2,10 @@ let speech = new SpeechSynthesisUtterance
 speech.lang= "en"
 
 
-document.querySelector('button').addEventListener('click', getSpeech,getDate);
-function getSpeech() {
-  speech.text= document.querySelector('h3').innerText
-  window.speechSynthesis.speak(speech)
-  getDate()
-}
+document.querySelector('#picturebutt').addEventListener('click', getDate);
   function getDate() {
     let pastData = document.querySelector('input').value ;
+    document.querySelector('#plea').style.display= 'block';
 
     fetch(`https://api.nasa.gov/planetary/apod?api_key=ncDIWQXNBO5y9mKuwu9cVcBf1Dm19esPMjow9qy3&date=${pastData}`)
       .then(res => res.json()) // parse response as JSON
@@ -29,3 +25,25 @@ function getSpeech() {
       }); 
        
     } 
+
+    document.querySelector('#read').addEventListener('click', getSpeech);  
+    function getSpeech() {
+      speech.text= document.querySelector('h3').innerText
+      window.speechSynthesis.speak(speech)
+      getDate()
+    }
+
+    document.querySelector("#pause").addEventListener("click", function(){
+      window.speechSynthesis.pause(speech);
+  });
+  
+  
+  document.querySelector("#resume").addEventListener("click", function(){
+      window.speechSynthesis.resume(speech);
+  });
+  
+  
+  document.querySelector("#cancel").addEventListener("click", function(){
+      window.speechSynthesis.cancel(speech);
+  })
+  

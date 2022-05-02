@@ -15,7 +15,7 @@ body{
 
 .container{
 width:400px;
-height: 800px;
+height: 860px;
 margin:0 auto;
 border: 1px solid purple;
 box-shadow: 0 5px 5px 3px rgba(255,255,255,0.5);
@@ -46,7 +46,83 @@ img, embed{
     padding: 22px;
     box-shadow: 0 5px 5px 3px rgba(255,255,255,0.8);
 }
+#read{
+    background-color: purple;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 22px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin-top: 15px;
+    margin-left: 155px;
+  }
+  
+  #read:hover{
+    opacity: 1;
+    background-color:plum;
+    color:cornsilk;
+  }
 
+  .secondbuttons{
+      margin-top: 15px;
+      margin-left: 8px;
+      margin-right: 8px;
+      display: flex;
+      justify-content: space-between;
+  }
+#pause{
+    background-color: hsl(300, 31%, 20%);
+    border: none;
+    color: #d36868;
+    border-radius: 33px;
+    padding: 6px 22px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+#pause:hover{
+    opacity: 1;
+    background-color:#c061c0;
+    color:cornsilk;
+}
+
+#cancel{
+    background-color: #df48df;
+    border: none;
+    color: #615a5a;
+    border-bottom-left-radius: 33px;
+    border-top-right-radius: 33px;
+    padding: 6px 22px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+#cancel:hover{
+    opacity: 1;
+    background-color:rgb(65, 32, 65);
+    color:cornsilk;
+}
+
+#resume{
+    background-color: #130413;
+    border: none;
+    color: whitesmoke;
+    border-radius: 33px;
+    padding: 6px 22px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+#resume:hover{
+    opacity: 1;
+    background-color:plum;
+    color:#2e2a19;
+}
 
 .firstcontainer{
  width:120px;   
@@ -105,7 +181,21 @@ img, embed{
     .container{
         margin-bottom: 100px;
     }
+    p{
+        text-align: center;
+        font-size:8px;
+    }
   }
+
+  @media only screen and (min-width: 600px){
+    
+    p{
+        text-align: center;
+    }
+  }
+
+
+
 
   @media only screen and (min-width: 768px){
  .container{
@@ -117,12 +207,20 @@ img, embed{
  #picturebutt{
      margin-left:350px;
  }
+ p{
+     text-align: center;
+     font-weight: bold;
+ }
 
   }
 
   @media only screen and (min-width: 992px){
           #picturebutt{
               margin-left: 450px;
+          }
+          p{
+              text-align: center;
+              font-weight: bold;
           }
       
   }
