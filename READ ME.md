@@ -1,4 +1,4 @@
-# Trivia Quiz Project
+# NASA AT YOUR FINGERTIP
 
 The Nasa at your fingertip project is a full-stack web application that takes you through the Nasa space agency daily discoveries [nasa api](https://api.nasa.gov)
 
