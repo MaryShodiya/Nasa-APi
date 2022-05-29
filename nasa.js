@@ -12,10 +12,13 @@ document.querySelector('#picturebutt').addEventListener('click', getDate);
       .then(data => {
     console.log(data)
     if(data.media_type === 'image'){
+    document.querySelector('img').style.display = 'block';
     document.querySelector('img').src = data.hdurl;
+    document.querySelector('iframe').style.display = 'none';
+    
     }else if(data.media_type === 'video'){
-    document.getElementById('video').style.display= 'block';
-    document.querySelector('img').style.display= 'none';
+      document.querySelector('iframe').style.display = 'block';
+      document.querySelector('img').style.display = 'none';
     document.getElementById('video').src = data.url
     }
   document.querySelector('h3').innerText = data.explanation; 
